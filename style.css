@@ -1,3 +1,82 @@
 body{
   margin:0;
+  background-color: yellow;
+}
+.container{
+  display:grid;
+  grid-template-columns: 50% auto;
+  grid-template-rows: auto;
+}
+.container div {
+  margin:40px;
+}
+.item2{
+  position: relative;
+}
+#id_animation01{
+  position: absolute;
+  width:300px;
+  height:300px;
+  border: 1px solid green;
+  animation-name: anime01;
+  animation-duration: 3s;
+}
+@keyframes anime01{
+  from{
+    width:500px;
+    height:500px;
+    background-color: blue;
+  }
+  to{
+    width:100px;
+    height:100px;
+    background-color: red;
+  }
+}
+#id_animation02{
+  position: absolute;
+  top:30px;
+  left: 30px;
+  width:300px;
+  height:300px;
+  border: 1px solid red;
+  animation-name: anime02;
+  animation-duration: 3s;
+}
+@keyframes anime02{
+  from{
+    width:500px;
+    height:500px;
+    background-color: green;
+  }
+  to{
+    width:100px;
+    height:100px;
+    background-color: blue;
+  }
+}
+#id_animation03{
+  position: absolute;
+  top:60px;
+  left:60px;
+  width:300px;
+  height:300px;
+  border: 1px solid skyblue;
+  animation-delay: 2s;
+  animation-name: anime03;
+  animation-duration: 3s;
+  visibility: hidden;
+}
+@keyframes anime03{
+  from{
+    visibility: visible;
+    width:500px;
+    height:500px;
+    background-color: greenyellow;
+  }
+  to{
+    width:100px;
+    height:100px;
+    background-color: purple;
+  }
 }
